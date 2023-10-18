@@ -59,7 +59,18 @@ variable "s3_ignore_public_acls" {
     default = "true"
 }
 
+
 variable "s3_restrict_public_buckets" {
     type = bool
     default = "true"
+}
+
+variable "vpc_cidr" {
+  description = "The CIDR block for the VPC."
+  type        = string
+}
+
+variable "vpc_name" {
+  description = "Name tag of the VPC"
+  type        = string
 }
