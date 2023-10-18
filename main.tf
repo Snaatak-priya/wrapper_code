@@ -1,5 +1,5 @@
 module "backendModule" {
-  source = "https://github.com/Snaatak-priya/terraform_modules.git"
+source = "git::https://github.com/Snaatak-priya/terraform_modules.git"
 
   dynamodb_table_name = var.dynamodb_table_name
   billing_mode = var.billing_mode
