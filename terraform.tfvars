@@ -12,7 +12,3 @@
   s3_block_public_policy = true
   s3_ignore_public_acls = true
   s3_restrict_public_buckets = true
-
-region          = "ap-south-1"
-vpc_cidr        = "10.0.0.0/20"
-vpc_name        = "dev-vpc"
