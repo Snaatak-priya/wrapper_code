@@ -4,10 +4,10 @@ provider "aws" {
 
 terraform {
   backend "s3" {
-    bucket                  = var.s3_bucket_name
+    bucket                  = "snaatak-project-tfstate-storage"
     key                     = "snaatak-project"
     encrypt                 = true 
     region                  = "ap-south-1"
-    dynamodb_table          = var.dynamodb_table_name
+    dynamodb_table          = "snaatak-project-lock-table"
   }
 }
