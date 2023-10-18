@@ -16,6 +16,8 @@ source = "git::https://github.com/Snaatak-priya/terraform_modules.git//backendMo
   s3_ignore_public_acls = var.s3_ignore_public_acls 
   s3_restrict_public_buckets = var.s3_restrict_public_buckets
 
+}
+
 module "network_skeleton" {
 source = "git::https://github.com/Snaatak-priya/terraform_modules.git//network_skeleton?ref=main"
   
